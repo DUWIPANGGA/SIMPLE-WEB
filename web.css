@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.mains {
+  display: flex;
+  height: 400px;
+  gap: 1rem;
+  padding: 10px 20px 40px 20px;
+}
+.inmain {
+  background-image: url("bumis.gif");
+  background-size: auto 100%;
+}
+.card {
+  flex: 1;
+  filter: blur(100%);
+  filter: grayscale(100);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  transition: all 1s ease-in;
+}
+.card:hover {
+  width: 300px;
+  cursor: pointer;
+  filter: grayscale(0);
+  flex: 4;
+  border-radius: 20px;
+  /* box-shadow: 8px 8px 8px #ffffff62, 8px 8px 8px #fff; */
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+.side {
+  display: flex;
+  justify-content: center;
+}
+.nama {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%s;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+}
+.about {
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: blue;
+}
+.juduls {
+  padding: 50px 50px 10px 50px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 30px 10px 30px #fffdfd;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  text-decoration: aqua;
+}
+.bwj {
+  display: grid;
+  justify-content: center;
+  font-size: 20px;
+  color: #b8b3b3;
+  width: 10;
+  height: 100%;
+}
+.i1 {
+  background-size: auto 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("joget.gif");
+  width: 200px;
+  height: 200px;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: rotate(15deg) skew(-20deg) translate(0, 0);
+    text-shadow: -5px 5px 0 rgba(0 0 0 0.2);
+  }
+  50% {
+    transform: rotate(15deg) skew(-20deg) translate(50px, 50px);
+    text-shadow: -50px 50px 0 rgba(0 0 0 0.2);
+    filter: blur(15px);
+  }
+}
